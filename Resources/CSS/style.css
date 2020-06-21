@@ -1,0 +1,77 @@
+
+
+body {
+	font-family: arial;
+	margin: 0px;
+}
+
+
+/* drag container */
+#main-container {
+	margin: auto;
+	width: 850px;
+	margin-top: 4%;
+}
+		/* container for the left table */
+		#main-container #left{
+			float: left;
+			width: 100px;
+			height: 200px;
+		}
+		/* container for the right table */
+		#main-container #right{
+		  	display: table;
+		    table-layout: auto;
+			padding-right: 0px;
+			margin-right: 20px;
+			
+		}
+
+
+/* drag objects (DIV inside table cells) */
+.redips-drag {
+	cursor: move;
+	margin: auto;
+	z-index: 10;
+	background-color: white;
+	text-align: center;
+	font-size: 10pt; 	
+
+}
+
+
+
+		
+
+#right{
+	padding-left: 30px;
+}
+/* table cells */
+div#redips-drag td {
+	border-style: solid;
+	height: 60px;
+	text-align: center;
+	font-size: 10pt;
+	padding: 2px;
+	width:140px;
+}
+		/* left table - td */
+		div#redips-drag #table1 td {
+			border-width: 0px 0px 0px 0px;
+		
+		}
+		
+		/* right table - td */
+		div#redips-drag #table2 td {
+			border-width: 0px 1px 0px 0px;
+			border-color: #c0c0c6;
+		}
+
+		
+
+
+
+
+
+
+

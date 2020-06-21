@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="Resources/CSS/style.css" type="text/css" media="screen"/>
+		<meta name="description" content="Drag and drop table content with JavaScript">
+		<script type="text/javascript" src="Resources/Redips/redips-drag-min.js"></script>
+		<script type="text/javascript" src="Resources/JS/script1.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<title>Groupons</title>
+	</head>
+	<body style="background-color: #011627;">
+	<div>
+		<div id="main-container">
+			<h1 style="text-align: center; color: aliceblue; margin-bottom: 35px;">Groupon Drag And Drop</h1>
+			
+			<!-- tables inside this DIV could have draggable content -->
+			<div id="redips-drag">
+	
+				<!-- left container -->
+				<div id="left">
+					<table id="table1">
+						
+						<colgroup>
+							<col width="100"/>
+						</colgroup>
+						<tbody>
+							<tr><td class="redips-mark"><span class=" btn btn-primary" style=" background-color:  #086788; width: 90%; height: 80%; pointer-events: none;">Rewards </td></tr>
+
+							<tr >
+								<td class="dark col-sm-2" id="init-A"><div  class="btn btn-primary  redips-drag redips-clone climit1_25  reward1" >Reward 1</span>
+
+								<div class="cross">
+									<span class="glyphicon glyphicon-remove" style="cursor:pointer" onclick="crossClick(this)"></span>
+									</div>
+								</div>
+							</div></td></tr>
+							<tr ><td class="dark col-sm-2" id="init-B"><div  class="redips-drag redips-clone  climit1_25 btn btn-info reward2" >Reward 2
+								<div class="cross">
+									<span class="glyphicon glyphicon-remove" style="cursor:pointer" onclick="crossClick(this)"></span>
+								</div>
+							</div></td></tr>
+							<tr ><td class="dark col-sm-2" id="init-C"><div  class="redips-drag redips-clone climit1_25 btn btn-success reward3"  >Reward 3
+								<div class="cross">
+									<span class="glyphicon glyphicon-remove" style="cursor:pointer" onclick="crossClick(this)"></span>
+								</div>
+							</div></td></tr>
+							<tr ><td class="dark col-sm-2" id="init-D"><div  class="redips-drag redips-clone climit1_25 btn btn-warning reward4" >Reward 4
+								<div class="cross">
+									<span class="glyphicon glyphicon-remove" style="cursor:pointer" onclick="crossClick(this)"></span>
+								</div>
+							</div></td></tr>
+							<tr ><td class="dark col-sm-2" id="init-E"><div  class="redips-drag redips-clone climit1_25 btn btn-danger reward5" >Reward 5
+								<div class="cross">
+									<span class="glyphicon glyphicon-remove" style="cursor:pointer" onclick="crossClick(this)"></span>
+								</div>
+							</div></td></tr>
+						</tbody>
+					</table>
+				</div><!-- left container -->
+				
+				<!-- right container -->
+				<div id="right">
+					<table id="table2">
+	
+						<colgroup>
+							<col width="100"/>
+							<col width="100"/>
+							<col width="100"/>
+							<col width="100"/>
+							<col width="100"/>
+
+						</colgroup>
+						<tbody>
+							<tr >
+								<td class="redips-mark" style="border-right:0px; " ><span class=" btn btn-primary" style=" background-color:  #086788; width: 90%; height: 80%; pointer-events: none;">Category 1</span></td>
+								<td class="redips-mark" style="border-right:0px;"><span class=" btn btn-primary" style=" background-color:  #086788; width: 90%; height: 80%; pointer-events: none;">Category 2</span></td>
+								<td class="redips-mark" style="border-right:0px;"><span class=" btn btn-primary" style="background-color: #086788; width: 90%; height: 80%; pointer-events: none;">Category 3</span></td>
+								<td class="redips-mark" style="border-right:0px;"><span class=" btn btn-primary" style="background-color: #086788; width: 90%; height: 80%; pointer-events: none;">Category 4</span></td>
+								<td class="redips-mark" style="border-right:0px;"><span class=" btn btn-primary" style="background-color: #086788; width: 90%; height: 80%; pointer-events: none;">Category 5</span></td>
+							</tr>
+							<tr  >
+								<td class="redips-only reward1"></td>
+								<td class="redips-only reward1"></td>
+								<td class="redips-only reward1"></td>
+								<td class="redips-only reward1"></td>
+								<td class="redips-only reward1"></td>
+							</tr>
+							<tr >
+								<td class="redips-only reward2"></td>
+								<td class="redips-only reward2"></td>
+								<td class="redips-only reward2"></td>
+								<td class="redips-only reward2"></td>
+								<td class="redips-only reward2"></td>
+							</tr>
+							<tr >
+								<td class="redips-only reward3"></td>
+								<td class="redips-only reward3"></td>
+								<td class="redips-only reward3"></td>
+								<td class="redips-only reward3"></td>
+								<td class="redips-only reward3"></td>
+							</tr>
+							<tr >
+								<td class="redips-only reward4"></td>
+								<td class="redips-only reward4"></td>
+								<td class="redips-only reward4"></td>
+								<td class="redips-only reward4"></td>
+								<td class="redips-only reward4"></td>
+							</tr>
+							<tr ><td class="redips-only reward5"></td>
+								<td class="redips-only reward5"></td>
+								<td class="redips-only reward5"></td>
+								<td class="redips-only reward5"></td>
+								<td class="redips-only reward5"></td>	</tr>
+						</tbody>
+					</table>
+				</div><!-- right container -->
+			</div><!-- drag container -->
+			<div class="button"><!----buttons below undo redo reset-->
+				<ul class="pager">
+			<button class="btn btn-primary" onclick="undo()"> undo</button>
+			<button class="btn btn-primary" onclick="redo()"> redo</button>
+			<button class="btn btn-primary" onclick="reset()"> reset</button>
+			
+		</ul>
+		</div><!--end of buttons-->
+
+		<div class="alert alert-success"  role="alert"><!--alert-->
+			Note: State loaded from previous session. Please click on <a style="cursor:pointer" onclick="reset()">reset</a> to start a new board
+		  </div><!--end of alert-->
+		</div><!-- main container -->
+	</div>
+</div>
+
+	</body>
+</html>
